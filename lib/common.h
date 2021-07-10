@@ -14,6 +14,8 @@ size_t readn(int fd, void *vptr, size_t n);
 
 void error(int status, int err, char *fmt, ...);
 
+int tcp_client(char *address, int port);
+
 #define SERV_PORT 43211
 #define MAXLINE 4096
-#define LISTENENQ 1024
+#define LISTENQ 1024

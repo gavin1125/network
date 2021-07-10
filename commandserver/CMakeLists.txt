@@ -1,0 +1,5 @@
+add_executable(commandserver command_server.c)
+target_link_libraries(commandserver network)
+
+add_executable(commandclient command_client.c)
+target_link_libraries(commandclient network)

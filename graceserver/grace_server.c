@@ -25,7 +25,7 @@ int main(int argc, char **argv)
         error(1, errno, "bind failed ");
     }
 
-    int rt2 = listen(listenfd, LISTENENQ);
+    int rt2 = listen(listenfd, LISTENQ);
     if (rt2 < 0)
     {
         error(1, errno, "listen failed ");
