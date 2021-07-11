@@ -2,6 +2,7 @@ set(network_lib
         read.c
         log.c
         tcp_client.c
+        tcp_server.c
         )
 
 add_library(network ${network_lib})
