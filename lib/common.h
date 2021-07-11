@@ -10,6 +10,7 @@
 #include <string.h>
 #include <signal.h>
 #include <sys/wait.h>
+#include <pthread.h>
 
 size_t readn(int fd, void *vptr, size_t n);
 

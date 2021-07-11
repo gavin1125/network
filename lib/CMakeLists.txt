@@ -6,6 +6,7 @@ set(network_lib
         )
 
 add_library(network ${network_lib})
+target_link_libraries(network pthread)
 install(TARGETS network DESTINATION lib)
 
 #file(GLOB HEADERS "*.h")
